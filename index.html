@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Hello Maps</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<script src="bower_components/platform/platform.js"></script>
+		<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+		<link rel="import" href="bower_components/google-map/google-map.html">
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body fullbleed layout vertical>
+		<core-header-panel flex>
+			<core-toolbar layout horizontal>
+				<div flex>Hello Maps</div>
+			 	<div>DEBUG <span id="debug"></span></div>
+			</core-toolbar>
+			<google-map latitude="51.22" longitude="6.77" zoom="10" fit showCenterMarker></google-map>
+		</core-header-panel>
+		<script src="app.js"></script>
+	</body>
+</html>
