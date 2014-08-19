@@ -3,15 +3,15 @@
 	var debug = document.querySelector('#debug');
 
 	function round(number) {
-		return Math.round(number * 10000) / 10000;
+		return Math.round(number * 100) / 100;
 	}
 
 	navigator.geolocation.getCurrentPosition(function(geoposition) {
 		console.log(geoposition);
-		var lat = round(geoposition.coords.latitude);
-		var lon = round(geoposition.coords.longitude);
+		var lat = geoposition.coords.latitude;
+		var lon = geoposition.coords.longitude;
 		var acc = geoposition.coords.accuracy;
-		debug.innerHTML = 'lat: ' + lat + ', lon: ' + lon + ', acc: ' + acc;
+		debug.innerHTML = 'lat: ' + round(lat) + ', lon: ' + round(lon) + ', acc: ' + acc;
 		googleMap.latitude = lat;
 		googleMap.longitude = lon;
 		if (acc <= 50) {
