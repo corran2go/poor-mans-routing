@@ -10,3 +10,5 @@ Run
 	bower install
 
 to resolve dependencies.
+
+See it in action on any browser on desktop or smartphone/tablet [Poor Man's Routing](http://corran2go.github.io/poor-mans-routing/)
